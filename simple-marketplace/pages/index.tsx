@@ -26,6 +26,8 @@ function Store(): JSX.Element {
   return (
     <NLayout>
       <NHeader />
+      <Header />
+
       <NMain />
       {/* Add other sections here */}
     </NLayout>
