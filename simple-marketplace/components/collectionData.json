@@ -1,0 +1,122 @@
+[
+    {
+        "collectionId": 1,
+        "imgSrc": "/images/showcase-1.jpg",
+        "imgAlt": "Digital Collection",
+        "title": "Digital Collection",
+        "author": {
+            "name": "CutieGirl",
+            "avatar": "/images/avatar-1.jpg",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 2,
+        "imgSrc": "/images/showcase-2.jpg",
+        "imgAlt": "GIF Collection",
+        "title": "GIF Collection",
+        "author": {
+            "name": "ButterFly",
+            "avatar": "/images/avatar-2.jpg",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 3,
+        "imgSrc": "/images/showcase-3.jpg",
+        "imgAlt": "Sports Collection",
+        "title": "Sports Collection",
+        "author": {
+            "name": "NorseQueen",
+            "avatar": "/images/avatar-3.jpg",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 4,
+        "imgSrc": "/images/showcase-4.jpg",
+        "imgAlt": "Photography Collection",
+        "title": "Photography Collection",
+        "author": {
+            "name": "BigBull",
+            "avatar": "/images/avatar-4.jpg",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 5,
+        "imgSrc": "/images/showcase-5.jpg",
+        "imgAlt": "Illustrations Collection",
+        "title": "Illustrations Collection",
+        "author": {
+            "name": "Angel",
+            "avatar": "/images/avatar-5.jpg",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 6,
+        "imgSrc": "/images/showcase-6.gif",
+        "imgAlt": "Animations Collection",
+        "title": "Animations Collection",
+        "author": {
+            "name": "CrazyAnyone",
+            "avatar": "/images/avatar-6.gif",
+            "link": "#"
+        },
+        "itemsCount": 25
+    },
+    {
+        "collectionId": 7,
+        "imgSrc": "/images/showcase-7.jpg",
+        "imgAlt": "Nature Collection",
+        "title": "Nature Collection",
+        "author": {
+            "name": "NatureLover",
+            "avatar": "/images/avatar-7.jpg",
+            "link": "#"
+        },
+        "itemsCount": 30
+    },
+    {
+        "collectionId": 8,
+        "imgSrc": "/images/showcase-8.jpg",
+        "imgAlt": "Technology Collection",
+        "title": "Technology Collection",
+        "author": {
+            "name": "TechGuru",
+            "avatar": "/images/avatar-8.jpg",
+            "link": "#"
+        },
+        "itemsCount": 28
+    },
+    {
+        "collectionId": 9,
+        "imgSrc": "/images/showcase-9.jpg",
+        "imgAlt": "Food Collection",
+        "title": "Food Collection",
+        "author": {
+            "name": "Foodie",
+            "avatar": "/images/avatar-9.jpg",
+            "link": "#"
+        },
+        "itemsCount": 22
+    },
+    {
+        "collectionId": 10,
+        "imgSrc": "/images/showcase-10.jpg",
+        "imgAlt": "Travel Collection",
+        "title": "Travel Collection",
+        "author": {
+            "name": "Wanderlust",
+            "avatar": "/images/avatar-10.jpg",
+            "link": "#"
+        },
+        "itemsCount": 27
+    }
+]
