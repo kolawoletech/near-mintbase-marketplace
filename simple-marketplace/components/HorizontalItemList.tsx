@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './HorizontalItemList.module.css'
 
-// Define the type for the 'items' prop
 type Item = {
   title: string
   imageSrc: string
@@ -12,7 +11,7 @@ type Item = {
 }
 
 type HorizontalItemListProps = {
-  items: Item[] // Explicitly specify the type here
+  items: Item[]
 }
 
 const HorizontalItemList: React.FC<HorizontalItemListProps> = ({ items }) => (
@@ -25,7 +24,7 @@ const HorizontalItemList: React.FC<HorizontalItemListProps> = ({ items }) => (
           rows[rows.length - 1].push(item)
         }
         return rows
-      }, [])
+      }, [] as Item[][])
       .map((row, rowIndex) => (
         <li key={rowIndex} className={styles['horizontal-row']}>
           {row.map((item, index) => (
@@ -41,7 +40,7 @@ const HorizontalItemList: React.FC<HorizontalItemListProps> = ({ items }) => (
                   <div className={styles.author}>Author: {item.authorName}</div>
                 </div>
                 <div className={styles['vertical-column']}>
-                  <div className={styles.price}>($)Price: {item.price}</div>
+                  <div className={styles.price}>Price: {item.price}</div>
                   <div className={styles.owners}>Owners: {item.owners}</div>
                   <div className={styles.number}>Number: {item.number}</div>
                 </div>
