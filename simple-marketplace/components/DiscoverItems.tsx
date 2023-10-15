@@ -20,7 +20,7 @@ const DiscoverItems = () => {
               <div className="discover-card card">
                 <div
                   className="card-banner img-holder"
-                  style={{ '--width': '500', '--height': '500' }}
+                 
                 >
                   <img
                     src={item.imageSrc}
