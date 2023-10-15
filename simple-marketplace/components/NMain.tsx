@@ -3,7 +3,8 @@ import React from 'react'
 import NHeroSection from './NHeroSection'
 import NTopCollection from './NTopCollection'
 import ItemList from '../components/ItemList'
-import collectionData from './collectionData.json' // Update the path
+import HorizontalItemList from './HorizontalItemList'
+
 const jsonData = {
   items: [
     {
@@ -64,7 +65,7 @@ const NMain: React.FC = () => {
       <article>
         <NHeroSection />
         <NTopCollection />
-        <ItemList items={jsonData.items} />
+        <HorizontalItemList items={jsonData.items} />
       </article>
     </main>
   )

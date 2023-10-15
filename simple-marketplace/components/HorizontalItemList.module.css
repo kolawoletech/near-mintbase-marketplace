@@ -1,0 +1,46 @@
+/* components/HorizontalItemList.module.css */
+
+.horizontal-item-list {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.horizontal-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.horizontal-item {
+    flex: 0 0 calc(50% - 20px);
+    /* 50% width with padding included */
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.author {
+    font-size: 1rem;
+    color: #999;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #33adff;
+}
