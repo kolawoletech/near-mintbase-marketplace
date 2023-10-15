@@ -12,7 +12,6 @@ import { MAINNET_CONFIG } from '../config/constants'
 
 import '../styles/globals.css'
 import '../styles/style.css'
-//import 'ionicons/dist/css/ionicons.min.css'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const network =

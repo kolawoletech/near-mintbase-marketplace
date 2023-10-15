@@ -1,10 +1,10 @@
-// components/Main.tsx
 import React from 'react'
 import NHeroSection from './NHeroSection'
 import NTopCollection from './NTopCollection'
 import ItemList from '../components/ItemList'
 import HorizontalItemList from './HorizontalItemList'
-
+import TabSplitPlanr from './TabSplitPlanr'
+import { MbTab, MbTabs } from 'mintbase-ui'
 const jsonData = {
   items: [
     {
@@ -65,6 +65,52 @@ const NMain: React.FC = () => {
       <article>
         <NHeroSection />
         <NTopCollection />
+        <>
+          <MbTabs
+            activeIndex={0}
+            filterOptions={{
+              defaultOptionId: 'newest',
+              label: 'Order by',
+              options: [
+                {
+                  id: 'newest',
+                  label: 'Newest',
+                },
+                {
+                  id: 'oldest',
+                  label: 'Oldest',
+                },
+                {
+                  id: 'cheapest',
+                  label: 'Cheapest',
+                },
+                {
+                  id: 'most-expensive',
+                  label: 'Most expensive',
+                },
+              ],
+            }}
+            onOrderByChange={function noRefCheck() {}}
+            onTabChange={function noRefCheck() {}}
+          >
+            <MbTab
+              extraFilter="Show only listed"
+              isExtraFilterSelected
+              label={<span>NFTs</span>}
+              onExtraFilterChange={function noRefCheck() {}}
+            >
+              List of NFTs
+            </MbTab>
+            <MbTab label={<span>Active auctions</span>}>
+              List of active auctions
+            </MbTab>
+            <MbTab label={<span>Latest Listings</span>}>
+              List of latest listings
+            </MbTab>
+          </MbTabs>
+        </>
+        <TabSplitPlanr />
+
         <HorizontalItemList items={jsonData.items} />
       </article>
     </main>

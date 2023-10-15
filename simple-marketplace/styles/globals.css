@@ -9,27 +9,35 @@
    * colors
    */
 
-    --prussian-blue: hsla(217, 33%, 17%, 1);
-    --oxford-blue-2: hsla(222, 47%, 11%, 1);
-    --oxford-blue: hsla(221, 33%, 15%, 1);
-    --blue-violet: hsla(262, 83%, 58%, 1);
-    --blue-violet_a5: hsla(262, 83%, 58%, 0.05);
-    --blue-violet_a10: hsla(262, 83%, 58%, 0.1);
-    --alice-blue: hsla(214, 32%, 91%, 1);
-    --alice-blue-2: hsla(215, 30%, 92%, 1);
-    --cultured: hsla(220, 14%, 96%, 1);
-    --gainsboro: hsla(220, 13%, 91%, 1);
-    --light-gray: hsla(216, 12%, 84%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --white_a10: hsla(0, 0%, 100%, 0.1);
-    --manatee: hsla(218, 11%, 65%, 1);
-    --green-cyan: hsla(161, 94%, 30%, 1);
-    --cadet-grey: hsla(215, 20%, 65%, 1);
-    --electric-indigo: hsla(263, 70%, 50%, 1);
-    --maximum-red: hsla(0, 72%, 51%, 1);
-    --black: hsla(0, 0%, 0%, 1);
-    --gunmetal: hsla(215, 28%, 17%, 1);
+    /* Add your brand colors */
+        --mb-blackblue: #070C2B;
+        --mb-red: #FF2424;
+        --mb-red-35: #3A1C2A;
+        --mb-red-15: #FFDEDE;
+    
+        /* Other colors */
+        --prussian-blue: hsla(217, 33%, 17%, 1);
+        --oxford-blue-2: hsla(222, 47%, 11%, 1);
+        --oxford-blue: hsla(221, 33%, 15%, 1);
+        --blue-violet: hsla(262, 83%, 58%, 1);
+        --blue-violet_a5: hsla(262, 83%, 58%, 0.05);
+        --blue-violet_a10: hsla(262, 83%, 58%, 0.1);
+        --alice-blue: hsla(214, 32%, 91%, 1);
+        --alice-blue-2: hsla(215, 30%, 92%, 1);
+        --cultured: hsla(220, 14%, 96%, 1);
+        --gainsboro: hsla(220, 13%, 91%, 1);
+        --light-gray: hsla(216, 12%, 84%, 1);
+        --white: hsla(0, 0%, 100%, 1);
+        --white_a10: hsla(0, 0%, 100%, 0.1);
+        --manatee: hsla(218, 11%, 65%, 1);
+        --green-cyan: hsla(161, 94%, 30%, 1);
+        --cadet-grey: hsla(215, 20%, 65%, 1);
+        --electric-indigo: hsla(263, 70%, 50%, 1);
+        --maximum-red: hsla(0, 72%, 51%, 1);
+        --black: hsla(0, 0%, 0%, 1);
+        --gunmetal: hsla(215, 28%, 17%, 1);
 
+ 
     /**
    * gradient color
    */

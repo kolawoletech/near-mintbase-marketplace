@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { ESize, EState, MbButton, MbText } from 'mintbase-ui'
-import Head from 'next/head'
 import Header from '../components/Header'
-import Items from '../components/Items'
 import BuyModal from '../components/BuyModal/BuyModal'
 import { SelectedNft } from '../types/types'
 import NHeader from '../components/NHeader'
