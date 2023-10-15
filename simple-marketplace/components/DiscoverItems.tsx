@@ -31,15 +31,10 @@ const DiscoverItems = () => {
                     className="img-cover"
                   />
                   <button className="btn btn-primary">
-                    <ion-icon name="flash" aria-hidden="true"></ion-icon>
                     <span className="span">Place Bid</span>
                   </button>
                   {item.countdown && (
                     <div className="countdown">
-                      <ion-icon
-                        name="time-outline"
-                        aria-hidden="true"
-                      ></ion-icon>
                       <span className="span">{item.countdown}</span>
                     </div>
                   )}
@@ -67,7 +62,7 @@ const DiscoverItems = () => {
                     <p>Price</p>
                     <div className="card-price">
                       <img
-                        src="./assets/images/ethereum.svg"
+                        src="/images/ethereum.svg"
                         width="16"
                         height="24"
                         loading="lazy"
@@ -80,7 +75,7 @@ const DiscoverItems = () => {
                     <p>Highest Bid</p>
                     <div className="card-price">
                       <img
-                        src="./assets/images/ethereum.svg"
+                        src="/images/ethereum.svg"
                         width="16"
                         height="24"
                         loading="lazy"
@@ -96,7 +91,6 @@ const DiscoverItems = () => {
         </ul>
         <a href="#" className="btn-link link:hover">
           <span className="span">Explore More</span>
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
         </a>
       </div>
     </section>
