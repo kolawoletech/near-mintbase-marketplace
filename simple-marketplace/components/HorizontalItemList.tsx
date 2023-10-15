@@ -41,7 +41,7 @@ const HorizontalItemList: React.FC<HorizontalItemListProps> = ({ items }) => (
                   <div className={styles.author}>Author: {item.authorName}</div>
                 </div>
                 <div className={styles['vertical-column']}>
-                  <div className={styles.price}>Price: {item.price}</div>
+                  <div className={styles.price}>($)Price: {item.price}</div>
                   <div className={styles.owners}>Owners: {item.owners}</div>
                   <div className={styles.number}>Number: {item.number}</div>
                 </div>
