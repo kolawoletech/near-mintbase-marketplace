@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import { ESize, EState, MbButton, MbLogo, MbText } from 'mintbase-ui'
+import { ESize, EState, MbButton, MbText } from 'mintbase-ui'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Items from '../components/Items'
 import BuyModal from '../components/BuyModal/BuyModal'
 import { SelectedNft } from '../types/types'
-import NHeroSection from '../components/NHeroSection'
-import Image from 'next/image'
 
 function Store(): JSX.Element {
   const [showBuyModal, setShowBuyModal] = useState(false)
@@ -28,21 +26,14 @@ function Store(): JSX.Element {
         <title>Mintbase - Simple Marketplace Example</title>
       </Head>
       <Header />
-      <NHeroSection />
       <div className="m-8">
         <MbText>
           1. Make sure to change the env NEXT_PUBLIC_AFFILIATE_ACCOUNT to your
-          own NEAR account jjdj
+          own NEAR account
         </MbText>
         <MbText>
           2. On purchase, see your account pop up on the leaderboard
         </MbText>
-        <Image
-          src="/images/showcase-3.jpg"
-          alt="Picture of the author"
-          width={500}
-          height={500}
-        />
         <MbText>3. Check your wallet balance to see funds go up!</MbText>
         <div className="mt-4 flex">
           <a

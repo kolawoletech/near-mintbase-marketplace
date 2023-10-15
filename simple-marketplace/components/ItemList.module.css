@@ -1,0 +1,40 @@
+
+.horizontal-item-list {
+    list-style-type: none;
+    /* Remove default list bullets */
+}
+
+.horizontal-item {
+    display: flex;
+    align-items: center;
+    /* Vertically align content */
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    /* Add a horizontal line between items */
+}
+
+.thumbnail {
+    width: 100px;
+    /* Define a fixed width for the thumbnail */
+    height: 100px;
+    /* Define a fixed height for the thumbnail */
+    border-radius: 8px;
+    margin-right: 20px;
+    /* Add space between thumbnail and text */
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.author {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #33adff;
+}

@@ -25,8 +25,6 @@ const NTopCollection = () => (
       <div className="slider" data-slider>
         <ul className="slider-container" data-slider-container>
           {collectionData.map((item) => {
-            console.log(item) // Log the item here
-
             return (
               <NTopCollectionItem
                 key={item.collectionId}
