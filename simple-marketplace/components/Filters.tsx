@@ -1,17 +1,17 @@
-import React from 'react';
-import Slider from '@mui/material/Slider';
+import React from 'react'
+import Slider from '@mui/material/Slider'
 
 const Filters: React.FC = () => {
-  const [priceRange, setPriceRange] = React.useState<[number, number]>([0, 100]);
-  const [buyNow, setBuyNow] = React.useState(false);
+  const [priceRange, setPriceRange] = React.useState<[number, number]>([0, 100])
+  const [buyNow, setBuyNow] = React.useState(false)
 
   const handlePriceChange = (event: Event, newValue: [number, number]) => {
-    setPriceRange(newValue);
-  };
+    setPriceRange(newValue)
+  }
 
   const handleBuyNowChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setBuyNow(event.target.checked);
-  };
+    setBuyNow(event.target.checked)
+  }
 
   return (
     <section className="filters">
@@ -29,7 +29,7 @@ const Filters: React.FC = () => {
         <label>Price Range:</label>
         <Slider
           value={priceRange}
-          onChange={handlePriceChange}
+          //onChange={handlePriceChange}
           valueLabelDisplay="auto"
           valueLabelFormat={(value) => `$${value}`}
           min={0}
@@ -40,7 +40,7 @@ const Filters: React.FC = () => {
       <div className="filter-option">Binance NFT Marketplace</div>
       {/* Add more filter options as needed */}
     </section>
-  );
-};
+  )
+}
 
-export default Filters;
+export default Filters
