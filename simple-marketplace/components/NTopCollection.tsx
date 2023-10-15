@@ -1,8 +1,8 @@
 // NTopCollection.tsx
-import React from 'react'
-import NTopCollectionItem from './NTopCollectionItem' // Update the path
+import React from 'react';
+import NTopCollectionItem from './NTopCollectionItem'; // Update the path
 
-import collectionData from './collectionData.json' // Update the path
+import collectionData from './collectionData.json'; // Update the path
 
 const NTopCollection = () => (
   <section
@@ -19,24 +19,22 @@ const NTopCollection = () => (
         </h2>
         <a href="#" className="btn-link link link:hover">
           <span className="span">See More</span>
-          <i className="arrow-forward" aria-hidden="true"></i>
+          <i className="arrow-forward" aria-hidden="true" />
         </a>
       </div>
       <div className="slider" data-slider>
         <ul className="slider-container" data-slider-container>
-          {collectionData.map((item) => {
-            return (
-              <NTopCollectionItem
-                key={item.collectionId}
-                imgSrc={item.imgSrc}
-                imgAlt={item.imgAlt}
-                title={item.title}
-                author={item.author}
-                itemsCount={item.itemsCount}
-                collectionId={item.collectionId}
-              />
-            )
-          })}
+          {collectionData.map((item) => (
+            <NTopCollectionItem
+              key={item.collectionId}
+              imgSrc={item.imgSrc}
+              imgAlt={item.imgAlt}
+              title={item.title}
+              author={item.author}
+              itemsCount={item.itemsCount}
+              collectionId={item.collectionId}
+            />
+          ))}
         </ul>
 
         <button
@@ -44,22 +42,22 @@ const NTopCollection = () => (
           aria-label="Slide to previous item"
           data-slider-prev
         >
-          <i className="chevron-back-sharp" aria-hidden="true"></i>
+          <i className="chevron-back-sharp" aria-hidden="true" />
         </button>
         <button
           className="slider-btn next"
           aria-label="Slide to next item"
           data-slider-next
         >
-          <i className="chevron-forward-sharp" aria-hidden="true"></i>
+          <i className="chevron-forward-sharp" aria-hidden="true" />
         </button>
       </div>
       <a href="#" className="btn-link link link:hover">
         <span className="span">See More</span>
-        <i className="arrow-forward" aria-hidden="true"></i>
+        <i className="arrow-forward" aria-hidden="true" />
       </a>
     </div>
   </section>
-)
+);
 
-export default NTopCollection
+export default NTopCollection;

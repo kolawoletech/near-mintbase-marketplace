@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 interface TopCollectionItemProps {
   imgSrc: string
@@ -39,7 +39,7 @@ const TopCollectionItem: React.FC<TopCollectionItemProps> = ({
       <div className="card-content">
         <div className="card-profile">
           <img src={author.avatar} loading="lazy" alt={author.name} />
-          <i className="checkmark-circle" aria-hidden="true"></i>
+          <i className="checkmark-circle" aria-hidden="true" />
         </div>
         <h3 className="title-md card-title">
           <Link href={`/collections/${collectionId}`}>
@@ -47,15 +47,23 @@ const TopCollectionItem: React.FC<TopCollectionItemProps> = ({
           </Link>
         </h3>
         <p className="label-md card-author">
-          by{' '}
+          by
+          {' '}
           <Link href={author.link}>
-            <a className="link">@{author.name}</a>
+            <a className="link">
+              @
+              {author.name}
+            </a>
           </Link>
         </p>
-        <p className="card-text">{itemsCount} Items</p>
+        <p className="card-text">
+          {itemsCount}
+          {' '}
+          Items
+        </p>
       </div>
     </div>
   </li>
-)
+);
 
-export default TopCollectionItem
+export default TopCollectionItem;

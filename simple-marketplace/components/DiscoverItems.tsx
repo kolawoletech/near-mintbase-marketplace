@@ -1,8 +1,8 @@
-import React from 'react'
-import itemsData from './items.json' // Replace with the actual path to your JSON data
+import React from 'react';
+import itemsData from './items.json'; // Replace with the actual path to your JSON data
 
 const DiscoverItems = () => {
-  const { items } = itemsData
+  const { items } = itemsData;
 
   return (
     <section className="section discover" aria-labelledby="discover-label">
@@ -20,7 +20,7 @@ const DiscoverItems = () => {
               <div className="discover-card card">
                 <div
                   className="card-banner img-holder"
-                 
+
                 >
                   <img
                     src={item.imageSrc}
@@ -45,11 +45,12 @@ const DiscoverItems = () => {
                     width="32"
                     height="32"
                     loading="lazy"
-                    alt={item.authorName + ' profile'}
+                    alt={`${item.authorName} profile`}
                     className="img"
                   />
                   <a href="#" className="link:hover">
-                    @{item.authorName}
+                    @
+                    {item.authorName}
                   </a>
                 </div>
                 <h3 className="title-sm card-title">
@@ -94,7 +95,7 @@ const DiscoverItems = () => {
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DiscoverItems
+export default DiscoverItems;

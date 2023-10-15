@@ -1,24 +1,26 @@
-import { useState } from 'react'
-import { ESize, EState, MbButton, MbText } from 'mintbase-ui'
-import Head from 'next/head'
-import Header from '../components/Header'
-import Items from '../components/Items'
-import BuyModal from '../components/BuyModal/BuyModal'
-import { SelectedNft } from '../types/types'
+import { useState } from 'react';
+import {
+  ESize, EState, MbButton, MbText,
+} from 'mintbase-ui';
+import Head from 'next/head';
+import Header from '../components/Header';
+import Items from '../components/Items';
+import BuyModal from '../components/BuyModal/BuyModal';
+import { SelectedNft } from '../types/types';
 
 function Store(): JSX.Element {
-  const [showBuyModal, setShowBuyModal] = useState(false)
-  const [selectedItem, setSelectedItem] = useState({} as SelectedNft)
+  const [showBuyModal, setShowBuyModal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState({} as SelectedNft);
 
   const handleOpenBuyModal = (item: SelectedNft) => {
-    setSelectedItem(item)
-    setShowBuyModal(true)
-  }
+    setSelectedItem(item);
+    setShowBuyModal(true);
+  };
 
   const handleCloseBuyModal = () => {
-    setSelectedItem({} as SelectedNft)
-    setShowBuyModal(false)
-  }
+    setSelectedItem({} as SelectedNft);
+    setShowBuyModal(false);
+  };
 
   return (
     <div className="flex flex-1 flex-col min-h-screen text-gray-500">
@@ -58,7 +60,7 @@ function Store(): JSX.Element {
         )}
       </div>
     </div>
-  )
+  );
 }
 
-export default Store
+export default Store;

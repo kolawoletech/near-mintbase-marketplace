@@ -1,10 +1,11 @@
-import React from 'react'
-import NHeroSection from './NHeroSection'
-import NTopCollection from './NTopCollection'
-import ItemList from '../components/ItemList'
-import HorizontalItemList from './HorizontalItemList'
-import TabSplitPlanr from './TabSplitPlanr'
-import { MbTab, MbTabs } from 'mintbase-ui'
+import React from 'react';
+import { MbTab, MbTabs } from 'mintbase-ui';
+import NHeroSection from './NHeroSection';
+import NTopCollection from './NTopCollection';
+import ItemList from './ItemList';
+import HorizontalItemList from './HorizontalItemList';
+import TabSplitPlanr from './TabSplitPlanr';
+
 const jsonData = {
   items: [
     {
@@ -58,63 +59,59 @@ const jsonData = {
       countdown: '10d 23h 24m 10s',
     },
   ],
-}
-const NMain: React.FC = () => {
-  return (
-    <main>
-      <article>
-        <NHeroSection />
-        <NTopCollection />
-        <>
-          <MbTabs
-            activeIndex={0}
-            filterOptions={{
-              defaultOptionId: 'newest',
-              label: 'Order by',
-              options: [
-                {
-                  id: 'newest',
-                  label: 'Newest',
-                },
-                {
-                  id: 'oldest',
-                  label: 'Oldest',
-                },
-                {
-                  id: 'cheapest',
-                  label: 'Cheapest',
-                },
-                {
-                  id: 'most-expensive',
-                  label: 'Most expensive',
-                },
-              ],
-            }}
-            onOrderByChange={function noRefCheck() {}}
-            onTabChange={function noRefCheck() {}}
-          >
-            <MbTab
-              extraFilter="Show only listed"
-              isExtraFilterSelected
-              label={<span>NFTs</span>}
-              onExtraFilterChange={function noRefCheck() {}}
-            >
-              List of NFTs
-            </MbTab>
-            <MbTab label={<span>Active auctions</span>}>
-              List of active auctions
-            </MbTab>
-            <MbTab label={<span>Latest Listings</span>}>
-              List of latest listings
-            </MbTab>
-          </MbTabs>
-        </>
-        <TabSplitPlanr />
+};
+const NMain: React.FC = () => (
+  <main>
+    <article>
+      <NHeroSection />
+      <NTopCollection />
+      <MbTabs
+        activeIndex={0}
+        filterOptions={{
+          defaultOptionId: 'newest',
+          label: 'Order by',
+          options: [
+            {
+              id: 'newest',
+              label: 'Newest',
+            },
+            {
+              id: 'oldest',
+              label: 'Oldest',
+            },
+            {
+              id: 'cheapest',
+              label: 'Cheapest',
+            },
+            {
+              id: 'most-expensive',
+              label: 'Most expensive',
+            },
+          ],
+        }}
+        onOrderByChange={function noRefCheck() {}}
+        onTabChange={function noRefCheck() {}}
+      >
+        <MbTab
+          extraFilter="Show only listed"
+          isExtraFilterSelected
+          label={<span>NFTs</span>}
+          onExtraFilterChange={function noRefCheck() {}}
+        >
+          List of NFTs
+        </MbTab>
+        <MbTab label={<span>Active auctions</span>}>
+          List of active auctions
+        </MbTab>
+        <MbTab label={<span>Latest Listings</span>}>
+          List of latest listings
+        </MbTab>
+      </MbTabs>
+      <TabSplitPlanr />
 
-        <HorizontalItemList items={jsonData.items} />
-      </article>
-    </main>
-  )
-}
+      <HorizontalItemList items={jsonData.items} />
+    </article>
+  </main>
+);
 
-export default NMain
+export default NMain;
