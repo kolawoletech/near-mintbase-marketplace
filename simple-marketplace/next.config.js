@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   images: {
     domains: ['arweave.net', 'image-cache-service-z3w7d7dnea-ew.a.run.app'],
   },
