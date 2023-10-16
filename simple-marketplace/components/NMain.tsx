@@ -1,12 +1,12 @@
-import React from 'react';
-import { MbTab, MbTabs } from 'mintbase-ui';
-import NHeroSection from './NHeroSection';
-import NTopCollection from './NTopCollection';
-import ItemList from './ItemList';
-import HorizontalItemList from './HorizontalItemList';
-import TabSplitPlanr from './TabSplitPlanr';
+import React from 'react'
+import { MbTab, MbTabs } from 'mintbase-ui'
+import NHeroSection from './NHeroSection'
+import NTopCollection from './NTopCollection'
+import ItemList from './ItemList'
+import HorizontalItemList from './HorizontalItemList'
+import TabSplitPlanr from './TabSplitPlanr'
 
-const jsonData = {
+const jsonData: Item[] = {
   items: [
     {
       title: 'Genuine Undead #3902',
@@ -59,7 +59,7 @@ const jsonData = {
       countdown: '10d 23h 24m 10s',
     },
   ],
-};
+}
 const NMain: React.FC = () => (
   <main>
     <article>
@@ -94,7 +94,6 @@ const NMain: React.FC = () => (
       >
         <MbTab
           extraFilter="Show only listed"
-          isExtraFilterSelected
           label={<span>NFTs</span>}
           onExtraFilterChange={function noRefCheck() {}}
         >
@@ -112,6 +111,6 @@ const NMain: React.FC = () => (
       <HorizontalItemList items={jsonData.items} />
     </article>
   </main>
-);
+)
 
-export default NMain;
+export default NMain
