@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import styles from './TabSplitPlanr.module.css'
-import HorizontalItemList from './HorizontalItemList'
+import React, { useState } from 'react';
+import styles from './TabSplitPlanr.module.css';
+import HorizontalItemList from './HorizontalItemList';
 
 // Define a type for the items prop
 type Item = {
@@ -11,36 +11,36 @@ type Item = {
   price: string
   highestBid: string
   countdown?: string // Make it optional if needed
-}
+};
 
 type TabSplitPlanrProps = {
   items: Item[]
-}
+};
 
 const TabSplitPlanr: React.FC<TabSplitPlanrProps> = ({ items }) => {
-  const [activeTab, setActiveTab] = useState('lowToHigh')
+  const [activeTab, setActiveTab] = useState('lowToHigh');
 
   const handleTabChange = (tab: string) => {
-    setActiveTab(tab)
-  }
+    setActiveTab(tab);
+  };
 
   const sortItems = () => {
     if (!items || !Array.isArray(items)) {
-      return []
+      return [];
     }
 
     if (activeTab === 'lowToHigh') {
       return items
         .slice()
-        .sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+        .sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
     }
     if (activeTab === 'highToLow') {
       return items
         .slice()
-        .sort((a, b) => parseFloat(b.price) - parseFloat(a.price))
+        .sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
     }
-    return items
-  }
+    return items;
+  };
 
   return (
     <div className={styles['tab-split-planr']}>
@@ -60,7 +60,7 @@ const TabSplitPlanr: React.FC<TabSplitPlanrProps> = ({ items }) => {
       </div>
       <HorizontalItemList items={sortItems()} />
     </div>
-  )
-}
+  );
+};
 
-export default TabSplitPlanr
+export default TabSplitPlanr;

@@ -1,16 +1,16 @@
-import React from 'react'
-import styles from './ItemList.module.css'
+import React from 'react';
+import styles from './ItemList.module.css';
 
 type Item = {
   title: string
   imageSrc: string
   authorName: string
   price: string
-}
+};
 
 type ItemListProps = {
   items: Item[]
-}
+};
 
 const ItemList: React.FC<ItemListProps> = ({ items }) => (
   <ul className={styles['horizontal-item-list']}>
@@ -23,12 +23,18 @@ const ItemList: React.FC<ItemListProps> = ({ items }) => (
         />
         <div>
           <div className={styles.title}>{item.title}</div>
-          <div className={styles.author}>Author: {item.authorName}</div>
-          <div className={styles.price}>Price: {item.price}</div>
+          <div className={styles.author}>
+            Author:
+            {item.authorName}
+          </div>
+          <div className={styles.price}>
+            Price:
+            {item.price}
+          </div>
         </div>
       </li>
     ))}
   </ul>
-)
+);
 
-export default ItemList
+export default ItemList;

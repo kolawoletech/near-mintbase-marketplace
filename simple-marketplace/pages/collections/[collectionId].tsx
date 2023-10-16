@@ -1,22 +1,22 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import Filters from '../../components/Filters';
-import DiscoverItems from '../../components/DiscoverItems';
-import SearchBar from '../../components/SearchBar';
+import React from 'react'
+import { useRouter } from 'next/router'
+import Filters from '../../components/Filters'
+import DiscoverItems from '../../components/DiscoverItems'
+import SearchBar from '../../components/SearchBar'
 
 const CollectionDetail = () => {
-  const router = useRouter();
-  const { collectionId } = router.query;
+  const router = useRouter()
+  const { collectionId } = router.query
 
   if (!collectionId) {
-    return <div>Loading...</div>;
+    return <div>Loading...</div>
   }
 
   // Sample collection data (replace with your actual data or source)
   const collection = {
     title: 'Sample Collection Title',
     // Add other collection properties here
-  };
+  }
 
   return (
     <div>
@@ -31,8 +31,8 @@ const CollectionDetail = () => {
       </p>
       {/* Display other collection details */}
     </div>
-  );
-};
+  )
+}
 
 const DiscoverPage: React.FC = () => (
   <div className="discover-page">
@@ -40,11 +40,9 @@ const DiscoverPage: React.FC = () => (
       <Filters />
     </div>
     <div className="main-content">
-      {/* <SearchBar /> */}
-
       <DiscoverItems />
     </div>
   </div>
-);
+)
 
-export default DiscoverPage;
+export default DiscoverPage
